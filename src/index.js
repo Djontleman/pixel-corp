@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App'
+import AppHooks from './AppHooks'
 import 'tachyons'
-import './index.css'
+import './styles.css'
 
 
 ReactDOM.render(
-  <>
-    <App/>
-  </>
-  ,
+  <React.StrictMode>
+    <AppHooks />
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
